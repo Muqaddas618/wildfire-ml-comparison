@@ -1,0 +1,135 @@
+{
+  "n_raw": 1880465,
+  "n_duplicates_removed": 0,
+  "n_dropped_missing": 0,
+  "n_clean": 1880465,
+  "hour_missing_pct": 46.937220315188,
+  "owner_unknown_pct": 0.0,
+  "year_min": 1992,
+  "year_max": 2015,
+  "cause_source": "STAT_CAUSE_DESCR",
+  "legacy": true,
+  "features": {
+    "num": [
+      "LATITUDE",
+      "LONGITUDE",
+      "doy_sin",
+      "doy_cos",
+      "month",
+      "weekday",
+      "hour"
+    ],
+    "cat": [
+      "STATE",
+      "OWNER_DESCR",
+      "NWCG_REPORTING_AGENCY",
+      "SOURCE_SYSTEM_TYPE",
+      "season"
+    ],
+    "freq": [
+      "FIPS_CODE"
+    ]
+  },
+  "cls": {
+    "n_labeled": 1713742,
+    "n_unlabeled": 166723,
+    "merged_classes": [
+      "Structure"
+    ],
+    "classes": [
+      "Arson",
+      "Campfire",
+      "Children",
+      "Debris Burning",
+      "Equipment Use",
+      "Fireworks",
+      "Lightning",
+      "Miscellaneous",
+      "Other causes",
+      "Powerline",
+      "Railroad",
+      "Smoking"
+    ],
+    "share_train": {
+      "Debris Burning": 24.62374874582915,
+      "Miscellaneous": 17.86139287130957,
+      "Arson": 17.345057816859388,
+      "Lightning": 16.44972149907166,
+      "Equipment Use": 8.791695972319907,
+      "Campfire": 4.293680978936597,
+      "Children": 3.7796792655975517,
+      "Smoking": 3.217344057813526,
+      "Railroad": 2.170340567801893,
+      "Powerline": 0.688335627785426,
+      "Fireworks": 0.6010020033400111,
+      "Other causes": 0.17800059333531112
+    },
+    "share_test": {
+      "Debris Burning": 28.880219555898297,
+      "Miscellaneous": 25.019090173663876,
+      "Lightning": 13.873452939886743,
+      "Arson": 10.18470215548852,
+      "Equipment Use": 7.5627329568221855,
+      "Campfire": 5.694542100448335,
+      "Smoking": 2.3906189752545983,
+      "Powerline": 2.2779680494756818,
+      "Children": 2.0942487544134214,
+      "Fireworks": 0.8747457793705158,
+      "Railroad": 0.6796857870821899,
+      "Other causes": 0.46799277219563457
+    },
+    "majority_class": "Debris Burning",
+    "majority_share_test": 28.880219555898297
+  },
+  "reg": {
+    "median": 1.0,
+    "mean": 74.5201583399239,
+    "max": 606945.0,
+    "pct_class_A": 35.465642806433515,
+    "pct_ge_100": 2.8765757405748045,
+    "pct_ge_5000": 0.20064186251804741,
+    "log_mean": 1.0770377526170571,
+    "log_std": 1.3435147841456516,
+    "class_share": {
+      "A": 35.465642806433515,
+      "B": 49.952006551571024,
+      "C": 11.705774901420659,
+      "D": 1.5117005634244722,
+      "E": 0.7501867889059355,
+      "F": 0.41404652572634965,
+      "G": 0.20064186251804741
+    }
+  },
+  "splits": {
+    "train_years": [
+      1992,
+      2011
+    ],
+    "val_years": [
+      2012,
+      2013
+    ],
+    "test_years": [
+      2014,
+      2015
+    ],
+    "cls": {
+      "train_pop": 1451902,
+      "val_pop": 129573,
+      "test_pop": 132267,
+      "train_n": 299999,
+      "val_n": 50000,
+      "test_n": 132267,
+      "tune_n": 60000
+    },
+    "reg": {
+      "train_pop": 1600672,
+      "val_pop": 137549,
+      "test_pop": 142244,
+      "train_n": 300001,
+      "val_n": 50001,
+      "test_n": 142244,
+      "tune_n": 60000
+    }
+  }
+}

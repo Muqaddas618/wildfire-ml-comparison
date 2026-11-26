@@ -1,0 +1,15 @@
+{
+  "best_classifier": "Random Forest",
+  "best_regressor": "Hist Gradient Boosting",
+  "demo": false,
+  "db": "FPA_FOD_20170508.sqlite",
+  "python": "3.14.7",
+  "sklearn": "1.9.1",
+  "pandas": "3.1.1",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "cpu_count": 8,
+  "total_runtime_s": 920.9846202000008,
+  "tune_sample": 60000,
+  "cv_splits": 3,
+  "seed": 42
+}
